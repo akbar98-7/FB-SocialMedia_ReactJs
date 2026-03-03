@@ -8,14 +8,11 @@ function ImageCarousel({ images, startIndex, onClose }) {
   };
 
   const prevImage = () => {
-    setCurrent((prev) =>
-      prev === 0 ? images.length - 1 : prev - 1
-    );
+    setCurrent((prev) => (prev === 0 ? images.length - 1 : prev - 1));
   };
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50">
-      
       {/* Close Button */}
       <button
         onClick={onClose}

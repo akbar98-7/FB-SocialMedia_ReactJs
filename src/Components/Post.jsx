@@ -2,7 +2,15 @@ import React, { useState } from "react";
 import ImageCarousel from "./ImageCarousel";
 
 function Post({ post }) {
-  const { createdBy, avatar, description, images, createdAt } = post;
+  const {
+    createdBy,
+    avatar,
+    description,
+    description1,
+    desc2,
+    images,
+    createdAt,
+  } = post;
   const [showCarousel, setShowCarousel] = useState(false);
   const [selectedIndex, setSelectedIndex] = useState(0);
 
@@ -33,7 +41,7 @@ function Post({ post }) {
   const extraImages = images.length - 4;
 
   return (
-    <div className="bg-orange-700 w-[600px] rounded-xl shadow-md p-4">
+    <div className="bg-white w-[600px] rounded-xl shadow-md p-4">
       {/* Header */}
       <div className="flex items-center gap-3 mb-3">
         <img
@@ -42,13 +50,19 @@ function Post({ post }) {
           className="w-12 h-12 rounded-full object-cover"
         />
         <div>
-          <h3 className="font-semibold text-mauve-300">{createdBy}</h3>
-          <p className="text-sm text-mauve-300">{formatTime(createdAt)}</p>
+          <h3 className="font-semibold text-blue-900">{createdBy}</h3>
+          <p className="text-sm text-gray-600">{formatTime(createdAt)}</p>
         </div>
       </div>
 
       {/* Description */}
-      <p className="mb-3 text-white">{description}</p>
+      <p className="mb-3 text-black">{description}</p>
+
+      {/* Description */}
+      <p className="mb-3 text-black">
+        {description1}
+        <className className="text-blue-900">{desc2}</className>
+      </p>
 
       {/* ===== FACEBOOK STYLE IMAGE GRID ===== */}
       <div className="overflow-hidden rounded-lg">

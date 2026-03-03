@@ -6,7 +6,13 @@ function App() {
     createdBy: "Akber & Company Ltd.",
     avatar:
       "https://img.freepik.com/premium-vector/man-spiderman-suit-stands-front-city-skyline_1024980-111976.jpg",
-    description: "Information Technology Setup ✨",
+    description:
+      "With the Experience of 20 Years in IT Industry Providing Best IT Services in Pakistan.",
+
+    description1: "For Further Details....",
+
+    desc2: "Contact us on 0333-1234567",
+
     images: [
       "https://plus.unsplash.com/premium_photo-1661758351472-52ed02e99496?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "https://images.unsplash.com/photo-1625838144804-300f3907c110?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8SVR8ZW58MHx8MHx8fDA%3D",
